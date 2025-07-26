@@ -46,11 +46,11 @@ transform = transforms.Compose([
 
 # Label mapping
 sol_map = {
-    0: "safe_drive",         # Both hands on wheel, looking forward
-    1: "texting",      # Right hand texting on phone
-    2: "talking_phone",# Talking on phone with right hand
-    3: "reaching_behind",
-    4: "talking_to_passenger"
+    0: "safe drive",         # Both hands on wheel, looking forward
+    1: "Using phone",      # Right hand texting on phone
+    2: "Talking on phone ",# Talking on phone with right hand
+    3: "Trying to reach behind",
+    4: "Talking to a passenger"
  
 }
 
@@ -94,7 +94,7 @@ if video_file:
                 label = sol_map.get(pred, "unknown")
 
                 # Display label
-                label_box.title(f"Detected label: {label}")
+                label_box.title(f"Driver is distacted : {label}")
 
                 # Draw box and label
                 cv2.rectangle(frame, (x1, y1), (x2, y2), (0, 255, 0), 2)
