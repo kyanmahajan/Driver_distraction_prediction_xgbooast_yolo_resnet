@@ -7,7 +7,7 @@ from PIL import Image
 import numpy as np
 from torchvision import models, transforms
 import tempfile
-import pickle  # For loading XGBoost model
+
 from xgboost import XGBClassifier
 
 st.title("Driver Distraction Detection from Video (ResNet + XGBoost)")
