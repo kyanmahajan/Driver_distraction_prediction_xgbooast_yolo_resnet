@@ -1,5 +1,6 @@
 streamlit==1.35.0
 opencv-python-headless==4.9.0.80
+opencv-python==none
 torch==2.2.2
 ultralytics==8.1.24
 Pillow==10.3.0
