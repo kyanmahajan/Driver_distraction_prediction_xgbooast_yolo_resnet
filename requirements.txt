@@ -8,13 +8,13 @@ opencv-python>=4.7.0.72
 ultralytics>=8.0.20
 
 # Grad-CAM
-pytorch-grad-cam>=1.4.0
+pytorch-grad-cam
 
 # XGBoost
 xgboost>=1.7.0
 
 # System utilities
-tempfile  # Optional, built-in but okay to mention
+tempfile  
 
 # For YOLOv8 if needed
 PyYAML>=5.3.1
