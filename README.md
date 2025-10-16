@@ -57,6 +57,6 @@ The pipeline fuses **object detection** + **feature-based classification** for r
 Run the trained pipeline on new images or video frames:
 ```bash
 streamlit run app.py
-(This opens a streamlit app with basic UI for inference)
+
 
 
