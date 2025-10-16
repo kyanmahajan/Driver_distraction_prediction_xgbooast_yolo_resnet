@@ -1,2 +1,45 @@
-# Driver_distraction_prediction_xgbooast_yolo_resnet
-In this repo, we explore the ways of improving the accuracy on a  driver distraction prediction  by using different models
+# 🚗 Driver Distraction Prediction (YOLO + ResNet + XGBoost)
+
+This project detects **driver distraction** by combining **deep learning** and **machine learning** models.  
+It integrates **YOLO** for object detection, **ResNet** for feature extraction, and **XGBoost** for classification — creating a hybrid pipeline that identifies when a driver is distracted based on camera images.
+
+---
+
+## 🧠 Overview
+
+Distracted driving is one of the leading causes of road accidents worldwide.  
+This project aims to automatically analyze in-car footage to detect whether a driver is distracted (e.g., using a phone, looking away, not focused) using visual cues extracted from images.
+
+The pipeline fuses **object detection** + **feature-based classification** for robust and interpretable predictions.
+
+---
+
+## ⚙️ Architecture
+
+1. **Input**: Driver image or video frame from dashboard camera.  
+2. **YOLO (Object Detection)**:  
+   - Detects key objects like **hands**, **phone**, **face**, **steering wheel**, etc.  
+   - Outputs bounding boxes and object categories.  
+3. **ResNet (Feature Extraction)**:  
+   - Extracts deep embeddings from the cropped image regions or full frames.  
+4. **Feature Fusion**:  
+   - Combines YOLO outputs + ResNet embeddings + spatial/behavioral cues.  
+5. **XGBoost (Classification)**:  
+   - Uses the fused feature set to classify whether the driver is **distracted** or **attentive**.  
+6. **Output**:  
+   - Final class label (`distracted` / `not distracted`) and confidence score.  
+   - Optionally visualized with bounding boxes and heatmaps.
+
+---
+
+## 🧩 Tech Stack
+
+- **YOLOv8 / YOLOv5** → Object detection  
+- **ResNet50** → Deep visual feature extraction  
+- **XGBoost** → Gradient boosting for classification  
+- **Python** → Core implementation  
+- **PyTorch, OpenCV, NumPy, Pandas, Scikit-learn**
+
+---
+
+
