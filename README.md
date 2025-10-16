@@ -42,4 +42,21 @@ The pipeline fuses **object detection** + **feature-based classification** for r
 
 ---
 
+---
+
+## 🚀 Usage
+
+### 1️⃣ Training
+1. Annotate driver images with bounding boxes for relevant objects.  
+2. Train **YOLO** for object detection.  
+3. Extract **ResNet** features for detected regions or frames.  
+4. Combine YOLO + ResNet outputs into a feature dataset.  
+5. Train **XGBoost** using these features and corresponding distraction labels.
+
+### 2️⃣ Inference
+Run the trained pipeline on new images or video frames:
+```bash
+streamlit run app.py
+(This opens a streamlit app with basic UI for inference)
+
 
