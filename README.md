@@ -54,7 +54,9 @@ The pipeline fuses **object detection** + **feature-based classification** for r
 5. Train **XGBoost** using these features and corresponding distraction labels.
 
 ### 2️⃣ Inference
-Run the trained pipeline on new images or video frames:
+Run the trained pipeline on new images or video frames after cloning the repo
+```bash
+pip install -r requirements.txt
 ```bash
 streamlit run app.py
 
