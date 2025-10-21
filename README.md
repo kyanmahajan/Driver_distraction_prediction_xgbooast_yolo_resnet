@@ -57,7 +57,6 @@ The pipeline fuses **object detection** + **feature-based classification** for r
 Run the trained pipeline on new images or video frames after cloning the repo
 ```bash
 pip install -r requirements.txt
-```bash
 streamlit run app.py
 
 
